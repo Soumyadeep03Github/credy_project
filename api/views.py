@@ -3,7 +3,6 @@ from django.http import JsonResponse
 from django.contrib.auth.hashers import make_password, check_password
 import jwt
 from django.views.decorators.csrf import csrf_exempt
-import uuid
 import json
 import requests
 from django.urls import resolve
@@ -163,15 +162,15 @@ def all_collection(request):
             return JsonResponse({"is_success":False , "error":"Unable to process your request. Error detail : {}".format(str(e))}, status=500)
     elif request.method=='POST':
         try:
-            global uuid
             token = request.headers['Access-token']
             dec_dict = jwt.decode(token, APP_SECRET, algorithms=['HS256'])
             user_id=user.objects.get(uuid=dec_dict['uuid'])
             received_json_data=json.loads(request.body)
             title = received_json_data.get('title')
             description = received_json_data.get('description')
-            collection_id = uuid.uuid1()
-            new_collections = collection(title=title,description=description, uuid=collection_id, user_id=user_id)
+            if not title or not description:
+                raise Exception("The Title, Description of collection are mandatory.")
+            new_collections = collection(title=title,description=description, user_id=user_id)
             new_collections.save()
             movies = received_json_data.get('movies')
             if not new_collections.uuid:

@@ -1,0 +1,1220 @@
+{
+	"info": {
+		"_postman_id": "a8e1f302-c9ec-47b3-9e96-f563d2ca0fed",
+		"name": "credy",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "register - case 1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/register/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"register",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "register - case 2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"username\":\"sasf\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/register/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"register",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "register - case 3",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"password\":\"sasf\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/register/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"register",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "register - case 4",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"username\":\"testuser\",\r\n\"password\":\"sasf\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/register/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"register",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "register - case 5 - SUCCESS",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"username\":\"newuser\",\r\n\"password\":\"newuser\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/register/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"register",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login - case 1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"username\":\"newuser\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/login/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"login",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login - case 2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"username\":\"newuser\",\r\n\"password\":\"efsf\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/login/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"login",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login - case 3 - SUCCESS",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"username\":\"newuser\",\r\n\"password\":\"newuser\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/login/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"login",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "3rd Party Movie API call",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "access-token",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6Im5ld3VzZXIiLCJ1dWlkIjo2fQ.V2amNw132zK89KT83WhH54J-OR1nQeYghC83dGWq_ws",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"title\": \"TTTTTTT\",\r\n\"description\": \"PPPPPP\",\r\n\"movies\": [\"90434edb-5173-4eb5-84f4-49e204eacb29\",\"5a1935ce-efe8-4a9a-a069-58c9c4d31f8c\"]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/collection/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"collection",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "3rd Party Movie API out of range api case",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "Ne5DoTQt7p8qrgkPdtenTK8zd6MorcCR5vXZIJNfJwvfafZfcOs4reyasVYddTyXCz9hcL5FGGIVxw3q02ibnBLhblivqQTp4BIC93LZHj4OppuHQUzwugcYu7TIC5H1",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "iNd3jDMYRKsN1pjQPMRz2nrq7N99q4Tsp9EY9cM0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://demo.credy.in/api/v1/maya/movies/?page=11200",
+					"protocol": "https",
+					"host": [
+						"demo",
+						"credy",
+						"in"
+					],
+					"path": [
+						"api",
+						"v1",
+						"maya",
+						"movies",
+						""
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "11200"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Movie API - Case 1",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "access-token",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6Im5ld3VzZXIiLCJ1dWlkIjo2fQ.V2amNw132zK89KT83WhH54J-OR1nQeYghC83dGWq_ws",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/movies/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"movies",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Movie API - Case 2",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "access-token",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6Im5ld3VzZXIiLCJ1dWlkIjo2fQ.V2amNw132zK89KT83WhH54J-OR1nQeYghC83dGWq_ws",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/movies/?page=54",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"movies",
+						""
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "54"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Movie API - Case 3",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "access-token",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6Im5ld3VzZXIiLCJ1dWlkIjo2fQ.V2amNw132zK89KT83WhH54J-OR1nQeYghC83dGWq_ws",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/movies/?page=54999",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"movies",
+						""
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "54999"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Movie API - Case 4 - without access-token Invalid page",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/movies/?page=54999",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"movies",
+						""
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "54999"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Movie API - Case 5 - without access-token valid page number",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "access-token",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6Im5ld3VzZXIiLCJ1dWlkIjo2fQ.V2amNw132zK89KT83WhH54J-OR1nQeYghC83dGWq_ws",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/movies/?page=54",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"movies",
+						""
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "54"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create collection case 1 -- SUCCESS",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "access-token",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6Im5ld3VzZXIiLCJ1dWlkIjo2fQ.V2amNw132zK89KT83WhH54J-OR1nQeYghC83dGWq_ws",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"title\": \"TTTTTTT\",\r\n\"description\": \"PPPPPP\",\r\n\"movies\": [{\r\n            \"title\": \"Betrayal\",\r\n            \"description\": \"When one of her hits goes wrong, a professional assassin ends up with a suitcase full of a million dollars belonging to a mob boss ...\",\r\n            \"genres\": \"Action,Drama,Thriller\",\r\n            \"uuid\": \"720e8796-5397-4e81-9bd7-763789463707\"\r\n        },\r\n        {\r\n            \"title\": \"Siglo ng Pagluluwal\",\r\n            \"description\": \"An artist struggles to finish his work while a storyline about a cult plays in his head.\",\r\n            \"genres\": \"Drama\",\r\n            \"uuid\": \"e9548ee7-6a95-4917-893e-1fa1d3a6de40\"\r\n        }]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/collection/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"collection",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create collection case 2",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "access-token",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6Im5ld3VzZXIiLCJ1dWlkIjo2fQ.V2amNw132zK89KT83WhH54J-OR1nQeYghC83dGWq_ws",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"movies\": [{\r\n            \"title\": \"Betrayal\",\r\n            \"description\": \"When one of her hits goes wrong, a professional assassin ends up with a suitcase full of a million dollars belonging to a mob boss ...\",\r\n            \"genres\": \"Action,Drama,Thriller\",\r\n            \"uuid\": \"720e8796-5397-4e81-9bd7-763789463707\"\r\n        },\r\n        {\r\n            \"title\": \"Siglo ng Pagluluwal\",\r\n            \"description\": \"An artist struggles to finish his work while a storyline about a cult plays in his head.\",\r\n            \"genres\": \"Drama\",\r\n            \"uuid\": \"e9548ee7-6a95-4917-893e-1fa1d3a6de40\"\r\n        }]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/collection/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"collection",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all collections case 1 -- SUCCESS",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true,
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "access-token",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6Im5ld3VzZXIiLCJ1dWlkIjo2fQ.V2amNw132zK89KT83WhH54J-OR1nQeYghC83dGWq_ws",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/collection/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"collection",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all collections case 2 -- invalid method",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "access-token",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6Im5ld3VzZXIiLCJ1dWlkIjo2fQ.V2amNw132zK89KT83WhH54J-OR1nQeYghC83dGWq_ws",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/collection/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"collection",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET /collection/<collection_uuid>/ case -1 - SUCCESS",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true,
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "access-token",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6Im5ld3VzZXIiLCJ1dWlkIjo2fQ.V2amNw132zK89KT83WhH54J-OR1nQeYghC83dGWq_ws",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/collection/e860dda2-e084-11ea-ac75-f0038cc7b66a/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"collection",
+						"e860dda2-e084-11ea-ac75-f0038cc7b66a",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET /collection/<collection_uuid>/ case -2 --invalid uuid",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true,
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "access-token",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6Im5ld3VzZXIiLCJ1dWlkIjo2fQ.V2amNw132zK89KT83WhH54J-OR1nQeYghC83dGWq_ws",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/collection/e860dda2-e084-11ea-ac75-f0038cc7b6a/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"collection",
+						"e860dda2-e084-11ea-ac75-f0038cc7b6a",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT /collection/<collection_uuid>/ case -1 - SUCCESS",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "access-token",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6Im5ld3VzZXIiLCJ1dWlkIjo2fQ.V2amNw132zK89KT83WhH54J-OR1nQeYghC83dGWq_ws",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"movies\": [\r\n        {\r\n            \"uuid\": \"720e8796-5397-4e81-9bd7-763789463707\",\r\n            \"collection_id\": \"e860dda2-e084-11ea-ac75-f0038cc7b66a\",\r\n            \"title\": \"Betrayal\",\r\n            \"description\": \"When one of her hits goes wrong, a professional assassin ends up with a suitcase full of a million dollars belonging to a mob boss ...\",\r\n            \"genres\": \"Action,Drama,Thriller\"\r\n        }]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/collection/e860dda2-e084-11ea-ac75-f0038cc7b66a/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"collection",
+						"e860dda2-e084-11ea-ac75-f0038cc7b66a",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT /collection/<collection_uuid>/ case -2 - invalid uuid",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "access-token",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6Im5ld3VzZXIiLCJ1dWlkIjo2fQ.V2amNw132zK89KT83WhH54J-OR1nQeYghC83dGWq_ws",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"movies\": [\r\n        {\r\n            \"uuid\": \"720e8796-5397-4e81-9bd7-763789463707\",\r\n            \"collection_id\": \"e860dda2-e084-11ea-ac75-f0038cc7b66a\",\r\n            \"title\": \"Betrayal\",\r\n            \"description\": \"When one of her hits goes wrong, a professional assassin ends up with a suitcase full of a million dollars belonging to a mob boss ...\",\r\n            \"genres\": \"Action,Drama,Thriller\"\r\n        }]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/collection/e860dda2-e084-11ea-ac75-f0038cc7b66a1/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"collection",
+						"e860dda2-e084-11ea-ac75-f0038cc7b66a1",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE  /collection/<collection_uuid>/ case -1 - SUCCESS",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "access-token",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6Im5ld3VzZXIiLCJ1dWlkIjo2fQ.V2amNw132zK89KT83WhH54J-OR1nQeYghC83dGWq_ws",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"movies\": [\r\n        {\r\n            \"uuid\": \"720e8796-5397-4e81-9bd7-763789463707\",\r\n            \"collection_id\": \"e860dda2-e084-11ea-ac75-f0038cc7b66a\",\r\n            \"title\": \"Betrayal\",\r\n            \"description\": \"When one of her hits goes wrong, a professional assassin ends up with a suitcase full of a million dollars belonging to a mob boss ...\",\r\n            \"genres\": \"Action,Drama,Thriller\"\r\n        }]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/collection/e860dda2-e084-11ea-ac75-f0038cc7b66a/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"collection",
+						"e860dda2-e084-11ea-ac75-f0038cc7b66a",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE  /collection/<collection_uuid>/ case -2 - uuid not exist",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "access-token",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6Im5ld3VzZXIiLCJ1dWlkIjo2fQ.V2amNw132zK89KT83WhH54J-OR1nQeYghC83dGWq_ws",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"movies\": [\r\n        {\r\n            \"uuid\": \"720e8796-5397-4e81-9bd7-763789463707\",\r\n            \"collection_id\": \"e860dda2-e084-11ea-ac75-f0038cc7b66a\",\r\n            \"title\": \"Betrayal\",\r\n            \"description\": \"When one of her hits goes wrong, a professional assassin ends up with a suitcase full of a million dollars belonging to a mob boss ...\",\r\n            \"genres\": \"Action,Drama,Thriller\"\r\n        }]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/collection/e860dda2-e084-11ea-ac75-f0038ccy7b66a/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"collection",
+						"e860dda2-e084-11ea-ac75-f0038ccy7b66a",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET request-count/ case -1 - SUCCESS",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true,
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "access-token",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6Im5ld3VzZXIiLCJ1dWlkIjo2fQ.V2amNw132zK89KT83WhH54J-OR1nQeYghC83dGWq_ws",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"movies\": [\r\n        {\r\n            \"uuid\": \"720e8796-5397-4e81-9bd7-763789463707\",\r\n            \"collection_id\": \"e860dda2-e084-11ea-ac75-f0038cc7b66a\",\r\n            \"title\": \"Betrayal\",\r\n            \"description\": \"When one of her hits goes wrong, a professional assassin ends up with a suitcase full of a million dollars belonging to a mob boss ...\",\r\n            \"genres\": \"Action,Drama,Thriller\"\r\n        }]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/request-count/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"request-count",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET request-count/ case -2 - invalid method type",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "access-token",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6Im5ld3VzZXIiLCJ1dWlkIjo2fQ.V2amNw132zK89KT83WhH54J-OR1nQeYghC83dGWq_ws",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"movies\": [\r\n        {\r\n            \"uuid\": \"720e8796-5397-4e81-9bd7-763789463707\",\r\n            \"collection_id\": \"e860dda2-e084-11ea-ac75-f0038cc7b66a\",\r\n            \"title\": \"Betrayal\",\r\n            \"description\": \"When one of her hits goes wrong, a professional assassin ends up with a suitcase full of a million dollars belonging to a mob boss ...\",\r\n            \"genres\": \"Action,Drama,Thriller\"\r\n        }]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/request-count/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"request-count",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST request-count/reset/ case -1 - SUCCESS",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "access-token",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6Im5ld3VzZXIiLCJ1dWlkIjo2fQ.V2amNw132zK89KT83WhH54J-OR1nQeYghC83dGWq_ws",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"movies\": [\r\n        {\r\n            \"uuid\": \"720e8796-5397-4e81-9bd7-763789463707\",\r\n            \"collection_id\": \"e860dda2-e084-11ea-ac75-f0038cc7b66a\",\r\n            \"title\": \"Betrayal\",\r\n            \"description\": \"When one of her hits goes wrong, a professional assassin ends up with a suitcase full of a million dollars belonging to a mob boss ...\",\r\n            \"genres\": \"Action,Drama,Thriller\"\r\n        }]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/request-count/reset/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"request-count",
+						"reset",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST request-count/reset/ case -2 -- invalid method",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true,
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "access-token",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6Im5ld3VzZXIiLCJ1dWlkIjo2fQ.V2amNw132zK89KT83WhH54J-OR1nQeYghC83dGWq_ws",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"movies\": [\r\n        {\r\n            \"uuid\": \"720e8796-5397-4e81-9bd7-763789463707\",\r\n            \"collection_id\": \"e860dda2-e084-11ea-ac75-f0038cc7b66a\",\r\n            \"title\": \"Betrayal\",\r\n            \"description\": \"When one of her hits goes wrong, a professional assassin ends up with a suitcase full of a million dollars belonging to a mob boss ...\",\r\n            \"genres\": \"Action,Drama,Thriller\"\r\n        }]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/request-count/reset/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"request-count",
+						"reset",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
